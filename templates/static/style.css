@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7em;
+    height: 100%;
+    background: url('/static/images/test-bg.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+a{
+    color: #333;
+    text-decoration: none; 
+}
+
+p{
+  margin: 10px 0;
+}
+h1,h2,h3,h4{
+    padding: 20px;
+    color: white;
+}
+.py-3{
+  padding: 30px 0;
+}
+.l-heading{
+  font-size: 40px;
+}
+
+.container{
+    overflow: auto;
+    padding: 0 20px;
+    margin: auto;
+    max-width: 1100px;
+    
+}
+
+#navbar{
+    background: #333;
+    color: white;
+    overflow: auto;
+    opacity: 0.9;
+}
+
+#navbar a{
+    color: white;
+}
+
+#navbar h1{
+    padding-top: 20px;
+    float: left;
+}
+
+#navbar ul{
+    float: right;
+    list-style: none;
+}
+
+#navbar ul li{
+    float: left;
+}
+
+#navbar ul li a{
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+
+#navbar ul li a:hover, #navbar ul li a.current{
+    background:#444;
+    color: #f7c08a;
+}
+.imageinput{
+    background: white;
+    padding: 20px;
+    margin: auto;
+    border: 1px solid black;
+}
+input[type=file]{
+    padding: 8px 20px ;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #333;
+    color: white;
+    opacity: 0.9;
+}
+input[type=submit]{
+    padding: 5px 20px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+input[type=submit]:hover{
+    background: #f7c08a;
+    cursor: pointer;
+}
+#result {
+    background: white;
+    opacity: 0.8;
+    padding: 50px;
+    margin: 20px; 
+}
+
+#result p{
+    text-align: center;
+    color: #333;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* image slideshow */
+#intermediate p{
+    float: left;
+    color: white;
+}
+
+.mySlides {display: none}
+img {vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1100px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #333;
+  font-size: 16px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  width: 100%;
+  font-weight: bold;
+  /* text-align: center; */
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #333;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  right: 16px;
+  font-weight: bold;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+/* graph section */
+
+.box{
+    background: #333;
+    border: 2px solid black;
+    border-radius: 10px;
+    float: left;
+    width: 48%;
+    padding: 50px;
+    margin: 10px;
+    text-align: center;
+    opacity: 0.9;
+    
+}
+
+.box img{
+    width: 100%;
+    height: 100%;
+}
+
+/* about page */
+#abstract{
+  background: white;
+  color: #333;
+  padding: 20px 40px;
+}
+#abstract p{
+  font-size: 14px;
+  font-weight: bold;
+  text-align: justify;
+  padding: 10px;
+}
+
+
+/* team box */
+#team .box{
+  background:#333;
+  color: #f2f2f2;
+  border: 2px solid black;
+  float: left;
+  width: 23%;
+  padding: 50px;
+  text-align: center;
+  border-radius: 15px;
+  margin: 0 10px;
+  opacity: 0.9;
+}
+#team .container .box img{
+width: 150px;
+height: 150px;
+}
+
+#team .box img{
+  width: 100%;
+  height: 100%;
+}
+/* guide box */
+.box1{
+  background:#333;
+  color: #f2f2f2;
+  border: 2px solid black;
+  float: left;
+  width: 99%;
+  padding: 50px;
+  border-radius: 15px;
+  margin: 0 10px;
+  opacity: 0.9;
+}
+
+.container .box1 p,.container .box1 ul{
+  color: white;
+
+}
+
+.box1 img{
+  width: 100%;
+  height: 100%;
+}
+
+/* main footer */
+footer{
+  text-align: center;
+  background: #444;
+  color: #fff;
+  margin: 10px 0 0 0;
+  padding: 8px;
+  font-size: 14px;
+  opacity: 0.9;
+}
